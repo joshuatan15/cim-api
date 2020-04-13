@@ -1,0 +1,20 @@
+{
+  "name": "CustomerProfileDataResponse",
+  "base": "BaseResponse",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "hidden": [
+    "id"
+  ],
+  "properties": {
+    "data": {
+      "type": "CustomerProfile"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,203 @@
+{
+  "name": "CustomerProfile",
+  "plural": "customerProfiles",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "table": "USR_CUSTOMER_PROFILE"
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "format": "int64"
+    },
+    "fullName": {
+      "type": "string",
+      "required": false,
+      "length": 100,
+      "mysql": {
+        "columnName": "full_name"
+      }
+    },
+    "email": {
+      "type": "string",
+      "required": false,
+      "length": 100
+    },
+    "mobileNo": {
+      "type": "string",
+      "required": false,
+      "length": 20,
+      "mysql": {
+        "columnName": "mobile_no"
+      }
+    },
+    "address": {
+      "type": "string",
+      "required": false,
+      "length": 100
+    },
+    "postalCode": {
+      "type": "string",
+      "required": false,
+      "length": 10,
+      "mysql": {
+        "columnName": "postal_code"
+      }
+    },
+    "city": {
+      "type": "string",
+      "required": false,
+      "length": 30
+    },
+    "state": {
+      "type": "string",
+      "required": false,
+      "length": 30
+    },
+    "country": {
+      "type": "string",
+      "required": false,
+      "length": 30
+    },
+    "identityNo": {
+      "type": "string",
+      "required": false,
+      "length": 20,
+      "mysql": {
+        "columnName": "identity_no"
+      }
+    },
+    "status": {
+      "type": "string",
+      "required": false,
+      "length": 20
+    },
+    "pendingStatus": {
+      "type": "string",
+      "required": false,
+      "length": 20,
+      "mysql": {
+        "columnName": "pending_status"
+      }
+    },
+    "tmpFullName": {
+      "type": "string",
+      "required": false,
+      "length": 100,
+      "mysql": {
+        "columnName": "tmp_full_name"
+      }
+    },
+    "tmpEmail": {
+      "type": "string",
+      "required": false,
+      "length": 100,
+      "mysql": {
+        "columnName": "tmp_email"
+      }
+    },
+    "tmpMobileNo": {
+      "type": "string",
+      "required": false,
+      "length": 20,
+      "mysql": {
+        "columnName": "tmp_mobile_no"
+      }
+    },
+    "tmpAddress": {
+      "type": "string",
+      "required": false,
+      "length": 100,
+      "mysql": {
+        "columnName": "tmp_address"
+      }
+    },
+    "tmpPostalCode": {
+      "type": "string",
+      "required": false,
+      "length": 10,
+      "mysql": {
+        "columnName": "tmp_postal_code"
+      }
+    },
+    "tmpState": {
+      "type": "string",
+      "required": false,
+      "length": 30,
+      "mysql": {
+        "columnName": "tmp_state"
+      }
+    },
+    "tmpCity": {
+      "type": "string",
+      "required": false,
+      "length": 30,
+      "mysql": {
+        "columnName": "tmp_city"
+      }
+    },
+    "tmpCountry": {
+      "type": "string",
+      "required": false,
+      "length": 30,
+      "mysql": {
+        "columnName": "tmp_country"
+      }
+    },
+    "tmpIdentityNo": {
+      "type": "string",
+      "required": false,
+      "length": 20,
+      "mysql": {
+        "columnName": "tmp_identity_no"
+      }
+    },
+    "dateCreated": {
+      "type": "date",
+      "required": true,
+      "description": "The creation date.",
+      "defaultFn": "now",
+      "mysql": {
+        "columnName": "date_created"
+      }
+    },
+    "createdBy": {
+      "type": "string",
+      "required": true,
+      "description": "The creator.",
+      "default": "_system_",
+      "length": 50,
+      "mysql": {
+        "columnName": "created_by"
+      }
+    },
+    "lastUpdated": {
+      "type": "date",
+      "required": true,
+      "description": "Last update.",
+      "defaultFn": "now",
+      "mysql": {
+        "columnName": "last_updated"
+      }
+    },
+    "updatedBy": {
+      "type": "string",
+      "required": true,
+      "description": "The last updater.",
+      "default": "_system_",
+      "length": 50,
+      "mysql": {
+        "columnName": "updated_by"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "methods": {}
+}

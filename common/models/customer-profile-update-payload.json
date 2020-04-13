@@ -1,0 +1,29 @@
+{
+  "name": "CustomerProfileUpdatePayload",
+  "base": "CustomerProfile",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "excludeBaseProperties": [
+    "id",
+    "status",
+    "pendingStatus",
+    "tmpFullName",
+    "tmpEmail",
+    "tmpMobileNo",
+    "tmpAddress",
+    "tmpPostalCode",
+    "tmpState",
+    "tmpCity",
+    "tmpCountry",
+    "tmpIdentityNo",
+    "dateCreated",
+    "lastUpdated"
+  ],
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

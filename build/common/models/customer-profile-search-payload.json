@@ -1,0 +1,27 @@
+{
+  "name": "CustomerProfileSearchPayload",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "hidden": [
+    "id"
+  ],
+  "properties": {
+    "users": {
+      "type": [
+        {
+          "type": "CustomerProfile"
+        }
+      ]
+    },
+    "totalCount": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

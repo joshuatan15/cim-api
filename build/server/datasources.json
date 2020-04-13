@@ -1,0 +1,12 @@
+{
+  "default": {
+    "host": "db-host",
+    "port": 3306,
+    "url": "",
+    "database": "cim",
+    "password": "password",
+    "name": "default",
+    "user": "cim",
+    "connector": "mysql"
+  }
+}

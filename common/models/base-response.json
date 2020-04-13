@@ -1,0 +1,38 @@
+{
+  "name": "BaseResponse",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "hidden": [
+    "id"
+  ],
+  "properties": {
+    "referenceNumber": {
+      "type": "string",
+      "required": true,
+      "length": 50
+    },
+    "correlationId": {
+      "type": "string",
+      "required": true,
+      "length": 50
+    },
+    "errorCode": {
+      "type": "string"
+    },
+    "errors": {
+      "type": [
+        "string"
+      ]
+    },
+    "errorMessage": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "CustomerProfileApproveRejectData",
+  "base": "Model",
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "format": "int64"
+    },
+    "status": {
+      "type": "string",
+      "description": "Approve/Reject status: SUCCESSFUL, FAILED."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

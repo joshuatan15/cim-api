@@ -1,0 +1,20 @@
+{
+  "name": "CustomerProfileUpdateRequest",
+  "base": "BaseRequest",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "hidden": [
+    "id"
+  ],
+  "properties": {
+    "user": {
+      "type": "CustomerProfileUpdatePayload"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

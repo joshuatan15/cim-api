@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "outDir": "build",
+    "rootDir": ".",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "pretty": true,
+    "strict": false,
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "common/**/*.ts",
+    "client/**/*.ts",
+    "server/**/*.ts"
+  ]
+}

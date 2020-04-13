@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "CustomerProfile": {
+    "dataSource": "default",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "createCustomer": true,
+          "search": true,
+          "updateCustomer": true,
+          "approve": true,
+          "reject": true,
+          "delete": true
+        }
+      }
+    }
+  },
+  "CustomerProfileCreateRequest": {
+    "dataSource": "default",
+    "public": true
+  },
+  "CustomerProfileCreatePayload": {
+    "dataSource": "default",
+    "public": false
+  },
+  "CustomerProfileSearchPayload": {
+    "dataSource": "default",
+    "public": false
+  },
+  "CustomerProfileSearchResponse": {
+    "dataSource": "default",
+    "public": false
+  },
+  "CustomerProfileApproveRejectData": {
+    "dataSource": "default",
+    "public": false
+  },
+  "CustomerProfileApproveRejectRequest": {
+    "dataSource": "default",
+    "public": true
+  },
+  "CustomerProfileUpdateRequest": {
+    "dataSource": "default",
+    "public": true
+  },
+  "CustomerProfileUpdatePayload": {
+    "dataSource": "default",
+    "public": false
+  },
+  "CustomerProfileApproveRejectResponse": {
+    "dataSource": "default",
+    "public": false
+  },
+  "CustomerProfileDataResponse": {
+    "dataSource": "default",
+    "public": false
+  },
+  "BaseRequest": {
+    "dataSource": "default",
+    "public": true
+  },
+  "BaseResponse": {
+    "dataSource": "default",
+    "public": false
+  }
+}

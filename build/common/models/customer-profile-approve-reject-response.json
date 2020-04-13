@@ -1,0 +1,24 @@
+{
+  "name": "CustomerProfileApproveRejectResponse",
+  "base": "BaseResponse",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "hidden": [
+    "id"
+  ],
+  "properties": {
+    "data": {
+      "type": [
+        {
+          "type": "CustomerProfileApproveRejectData"
+        }
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"CustomerStatus.js","sourceRoot":"","sources":["../../../common/enum/CustomerStatus.ts"],"names":[],"mappings":";;AAMA,MAAM,CAAC,OAAO,GAAG;IACf,WAAW,EAAE,cAAc;IAC3B,UAAU,EAAE,aAAa;IACzB,aAAa,EAAE,gBAAgB;IAC/B,aAAa,EAAE,gBAAgB;CAChC,CAAA"}

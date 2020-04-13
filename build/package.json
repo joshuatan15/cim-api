@@ -1,0 +1,66 @@
+{
+  "name": "cim-api",
+  "version": "1.0.0",
+  "main": "build/server/server.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "tslint": "tslint -p .",
+    "lint": "eslint .",
+    "start": "node build/server/server.js",
+    "compile": "rm -rf build && tsc && copyfiles -e \"**/*.ts\" \"./*.js\" \"./*.json\" \"server/**/*\" \"common/**/*\" \"client/**/*\" build",
+    "posttest": "npm run lint && npm audit",
+    "swagger": "lb export-api-def -o build/swagger.json",
+    "up": "db-migrate up -e development",
+    "down": "db-migrate down -e development",
+    "zip": "node server/zip.js",
+    "deleteDeploymentFolder": "node server/clean.js",
+    "dist": "npm run compile && mkdir -p user/user &&  npm run swagger && copyfiles \"build/**/*\" \"config/**/*\" \"node_modules/**/*\" \".env.production\" user/user && npm run zip && npm run deleteDeploymentFolder",
+    "pretest": "npm run compile",
+    "test": "mocha --recursive build/**/*.test.js"
+  },
+  "dependencies": {
+    "@types/node": "^12.12.21",
+    "@types/request-promise": "^4.1.45",
+    "@types/uuid": "^7.0.2",
+    "compression": "^1.0.3",
+    "config": "^3.2.4",
+    "copyfiles": "^2.1.1",
+    "cors": "^2.5.2",
+    "db-migrate": "^0.11.6",
+    "db-migrate-mysql": "^1.1.10",
+    "dotenv-flow": "^3.1.0",
+    "handlebars": "^4.5.3",
+    "helmet": "^3.10.0",
+    "http-status-codes": "^1.4.0",
+    "log4js": "^5.3.0",
+    "loopback": "^3.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-connector-mysql": "^5.4.2",
+    "moment": "^2.24.0",
+    "nodemailer": "^6.4.0",
+    "request-promise": "^4.2.5",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0",
+    "typescript": "^3.7.2",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.21",
+    "@types/nodemailer": "^6.2.2",
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0",
+    "mocha": "^6.2.2",
+    "tslint": "^5.20.1",
+    "@types/uuid": "^7.0.2"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "cim-api"
+}

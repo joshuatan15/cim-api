@@ -1,0 +1,37 @@
+{
+  "name": "CustomerProfileApproveRejectRequest",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "hidden": [
+    "id"
+  ],
+  "properties": {
+    "referenceNumber": {
+      "type": "string",
+      "required": true,
+      "length": 50
+    },
+    "channelId": {
+      "type": "string",
+      "required": true,
+      "length": 10
+    },
+    "username": {
+      "type": "string",
+      "required": true,
+      "length": 20
+    },
+    "payload": {
+      "type": [
+        "number"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
